@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+    <EditText
+        android:id="@+id/ssemailid"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+
+        android:gravity="center"
+        android:hint="selleremail"
+        android:padding="16dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/sspassword"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:hint="sellerpassword"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssemailid" />
+
+    <Button
+        android:id="@+id/sssignin"
+        android:layout_width="154dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:onClick="@openSellerActivity"
+        android:text="sellersignin"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sspassword" />
+
+    <TextView
+        android:id="@+id/sredirectsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="sellersignup"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sssignin"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

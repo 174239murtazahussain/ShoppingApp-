@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SignUp">
+
+
+    <EditText
+        android:id="@+id/ssuname"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+
+
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="sellername"
+        android:padding="16dp"
+
+
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <EditText
+        android:id="@+id/ssuemail"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="12dp"
+
+
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="selleremail"
+        android:padding="16dp"
+
+
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssuname" />
+
+    <EditText
+        android:id="@+id/ssuphone"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="12dp"
+
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="sellerphone"
+
+        android:padding="16dp"
+
+
+        android:textSize="22sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssuemail" />
+
+    <EditText
+        android:id="@+id/ssuaddress"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="12dp"
+
+        android:foregroundGravity="center"
+        android:gravity="center"
+
+        android:hint="selleraddress"
+        android:padding="16dp"
+
+
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssuphone" />
+
+    <EditText
+        android:id="@+id/ssupass"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="12dp"
+
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="sellerpassword"
+
+        android:inputType="textPassword"
+        android:padding="16dp"
+
+
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssuaddress" />
+
+    <EditText
+        android:id="@+id/ssuconfirmpass"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="12dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="sellerconfirmpass"
+
+        android:inputType="textPassword"
+        android:padding="16dp"
+
+
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssupass" />
+
+    <Button
+        android:id="@+id/sellerlogo"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="12dp"
+        android:text="sellerlogo"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssuconfirmpass" />
+
+    <Button
+        android:id="@+id/sellersu"
+        android:layout_width="154dp"
+        android:layout_height="49dp"
+
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/round_btn"
+
+        android:text="sellerregister"
+
+
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
